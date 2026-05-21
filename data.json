@@ -30,26 +30,6 @@
     "llm_themes": "Unknown"
   },
   {
-    "video_id": "zduSFxRajkE",
-    "title": "Let&#39;s build the GPT Tokenizer",
-    "published": "2024-02-20",
-    "channel": "Andrej Karpathy",
-    "url": "https://www.youtube.com/watch?v=zduSFxRajkE",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "zjkBMFhNj_g",
-    "title": "[1hr Talk] Intro to Large Language Models",
-    "published": "2023-11-23",
-    "channel": "Andrej Karpathy",
-    "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
     "video_id": "nepKKz-MzFM",
     "title": "FFmpeg: The Incredible Technology Behind Video on the Internet | Lex Fridman Podcast #496",
     "published": "2026-05-06",
@@ -80,26 +60,6 @@
     "llm_themes": "Unknown"
   },
   {
-    "video_id": "1SJiTwbSI58",
-    "title": "Rick Beato: Greatest Guitarists of All Time, History &amp; Future of Music | Lex Fridman Podcast #492",
-    "published": "2026-03-01",
-    "channel": "Lex Fridman",
-    "url": "https://www.youtube.com/watch?v=1SJiTwbSI58",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "KGVpKPNUdzA",
-    "title": "Khabib vs Lex: Training with Khabib | FULL EXCLUSIVE FOOTAGE",
-    "published": "2026-02-25",
-    "channel": "Lex Fridman",
-    "url": "https://www.youtube.com/watch?v=KGVpKPNUdzA",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
     "video_id": "xHi8PUIVyoo",
     "title": "I BUILT A FULLY AUTOMATIC MANSPLAINER",
     "published": "2026-03-06",
@@ -110,141 +70,21 @@
     "llm_themes": "Unknown"
   },
   {
+    "video_id": "Dr6jw-WAd9E",
+    "title": "Traditional X-Mas Stream",
+    "published": "2025-12-29",
+    "channel": "Yannic Kilcher",
+    "url": "https://www.youtube.com/watch?v=Dr6jw-WAd9E",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
     "video_id": "taCVT5vDAk0",
     "title": "TiDAR: Think in Diffusion, Talk in Autoregression (Paper Analysis)",
     "published": "2025-12-27",
     "channel": "Yannic Kilcher",
     "url": "https://www.youtube.com/watch?v=taCVT5vDAk0",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "v67plFw1nMw",
-    "title": "Titans: Learning to Memorize at Test Time (Paper Analysis)",
-    "published": "2025-12-14",
-    "channel": "Yannic Kilcher",
-    "url": "https://www.youtube.com/watch?v=v67plFw1nMw",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "Nao16-6l6dQ",
-    "title": "[Paper Analysis] The Free Transformer (and some Variational Autoencoder stuff)",
-    "published": "2025-11-01",
-    "channel": "Yannic Kilcher",
-    "url": "https://www.youtube.com/watch?v=Nao16-6l6dQ",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "0bpYCxv2qhw",
-    "title": "[Video Response] What Cloudflare&#39;s code mode misses about MCP and tool calling",
-    "published": "2025-10-19",
-    "channel": "Yannic Kilcher",
-    "url": "https://www.youtube.com/watch?v=0bpYCxv2qhw",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "4nQnhjimB4Y",
-    "title": "OpenAI&#39;s ChatGPT 5.5 Instant: The Good, The Bad And The Insane",
-    "published": "2026-05-08",
-    "channel": "Two Minute Papers",
-    "url": "https://www.youtube.com/watch?v=4nQnhjimB4Y",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "QzZ4VwDHAT4",
-    "title": "Sakana AI\u2019s God Simulator Is Brilliant",
-    "published": "2026-05-01",
-    "channel": "Two Minute Papers",
-    "url": "https://www.youtube.com/watch?v=QzZ4VwDHAT4",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "Sk9tvyRSCgY",
-    "title": "DeepMind\u2019s New AI: A Gift To Humanity",
-    "published": "2026-04-16",
-    "channel": "Two Minute Papers",
-    "url": "https://www.youtube.com/watch?v=Sk9tvyRSCgY",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "mFSFvKquXwI",
-    "title": "NVIDIA\u2019s New AI Shouldn\u2019t Work\u2026But It Does",
-    "published": "2026-04-11",
-    "channel": "Two Minute Papers",
-    "url": "https://www.youtube.com/watch?v=mFSFvKquXwI",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "Io_GqmbNBbY",
-    "title": "DeepMind\u2019s New AI Just Changed Science Forever",
-    "published": "2026-03-27",
-    "channel": "Two Minute Papers",
-    "url": "https://www.youtube.com/watch?v=Io_GqmbNBbY",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "o_av1b9rs2g",
-    "title": "Two Rival Bets on AGI: Google I/O Highlights",
-    "published": "2026-05-20",
-    "channel": "AI Explained",
-    "url": "https://www.youtube.com/watch?v=o_av1b9rs2g",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "jz0rNhfAKo8",
-    "title": "GPT 5.5 Arrives, DeepSeek V4 Drops, and the Compute War Intensifies",
-    "published": "2026-04-24",
-    "channel": "AI Explained",
-    "url": "https://www.youtube.com/watch?v=jz0rNhfAKo8",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "QVJcdfkRpH8",
-    "title": "Claude Opus 4.7 - A New Frontier, in Performance \u2026 and Drama",
-    "published": "2026-04-17",
-    "channel": "AI Explained",
-    "url": "https://www.youtube.com/watch?v=QVJcdfkRpH8",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "txx6ec6MLNY",
-    "title": "Claude Mythos: Highlights from 244-page Release",
-    "published": "2026-04-08",
-    "channel": "AI Explained",
-    "url": "https://www.youtube.com/watch?v=txx6ec6MLNY",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "s4tptozUJ8Y",
-    "title": "Two AI Models Set to \u201cstir government urgency\u201d, But Will This Challenge Undo Them?",
-    "published": "2026-03-26",
-    "channel": "AI Explained",
-    "url": "https://www.youtube.com/watch?v=s4tptozUJ8Y",
     "topics": "No transcript available",
     "summary": "No transcript available",
     "llm_themes": "Unknown"

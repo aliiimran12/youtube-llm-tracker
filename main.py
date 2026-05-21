@@ -22,9 +22,9 @@ def run():
             
             del video["transcript"]
             all_videos.append(video)
-    
-    with open("data.json", "w") as f:
-        json.dump(all_videos, f, indent=2)
+            
+            with open("data.json", "w") as f:
+                json.dump(all_videos, f, indent=2)
     
     print(f"\nDone! {len(all_videos)} videos saved to data.json")
 
