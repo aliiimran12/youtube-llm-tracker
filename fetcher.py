@@ -1,11 +1,10 @@
 from googleapiclient.discovery import build
 from youtube_transcript_api import YouTubeTranscriptApi
+import time
 import config
-import time 
-
-youtube = build("youtube", "v3", developerKey=config.YT_APIKEY)
 
 def get_recent_videos(channel_id, channel_name):
+    youtube = build("youtube", "v3", developerKey=config.YT_APIKEY)
     request = youtube.search().list(
         part="snippet",
         channelId=channel_id,
