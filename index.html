@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM YouTube Tracker</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #1a1a1a;
+            border-bottom: 1px solid #333;
+            padding: 24px 40px;
+        }
+
+        header h1 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        header p {
+            color: #888;
+            margin-top: 4px;
+            font-size: 0.9rem;
+        }
+
+        .controls {
+            padding: 24px 40px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        select, input {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #e0e0e0;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        select:focus, input:focus {
+            border-color: #555;
+        }
+
+        input {
+            width: 260px;
+        }
+
+        .last-updated {
+            margin-left: auto;
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        .table-wrapper {
+            padding: 0 40px 40px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        thead th {
+            background: #1a1a1a;
+            color: #888;
+            text-align: left;
+            padding: 12px 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid #333;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #222;
+            transition: background 0.15s;
+        }
+
+        tbody tr:hover {
+            background: #1a1a1a;
+        }
+
+        tbody td {
+            padding: 14px 16px;
+            vertical-align: top;
+        }
+
+        .channel-badge {
+            display: inline-block;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+
+        .video-title a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .video-title a:hover {
+            color: #aaa;
+        }
+
+        .topics {
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        .summary {
+            color: #ccc;
+            line-height: 1.5;
+            max-width: 400px;
+        }
+
+        .theme-tag {
+            display: inline-block;
+            background: #1e2a1e;
+            color: #6fcf6f;
+            border: 1px solid #2d4a2d;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.78rem;
+            margin: 2px 2px 2px 0;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>LLM YouTube Tracker</h1>
+    <p>AI-summarised videos from top LLM channels, updated automatically</p>
+</header>
+
+<div class="controls">
+    <select id="channelFilter">
+        <option value="">All Channels</option>
+    </select>
+    <input type="text" id="searchInput" placeholder="Search titles, topics, summaries...">
+    <span class="last-updated" id="lastUpdated"></span>
+</div>
+
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Channel</th>
+                <th>Video</th>
+                <th>Topics</th>
+                <th>Summary</th>
+                <th>LLM Themes</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    <div class="no-results" id="noResults" style="display:none">No videos match your search.</div>
+</div>
+
+<script>
+    let allVideos = [];
+
+    async function loadData() {
+        const res = await fetch('data.json');
+        const data = await res.json();
+        allVideos = data;
+
+        const channels = [...new Set(data.map(v => v.channel))];
+        const select = document.getElementById('channelFilter');
+        channels.forEach(c => {
+            const opt = document.createElement('option');
+            opt.value = c;
+            opt.textContent = c;
+            select.appendChild(opt);
+        });
+
+        const dates = data.map(v => v.published).sort().reverse();
+        if (dates.length) {
+            document.getElementById('lastUpdated').textContent = 'Last updated: ' + dates[0];
+        }
+
+        renderTable(data);
+    }
+
+    function renderTable(videos) {
+        const tbody = document.getElementById('tableBody');
+        const noResults = document.getElementById('noResults');
+
+        if (!videos.length) {
+            tbody.innerHTML = '';
+            noResults.style.display = 'block';
+            return;
+        }
+
+        noResults.style.display = 'none';
+        tbody.innerHTML = videos.map(v => `
+            <tr>
+                <td><span class="channel-badge">${v.channel}</span></td>
+                <td class="video-title"><a href="${v.url}" target="_blank">${v.title}</a></td>
+                <td class="topics">${v.topics}</td>
+                <td class="summary">${v.summary}</td>
+                <td>${v.llm_themes.split(',').map(t => `<span class="theme-tag">${t.trim()}</span>`).join('')}</td>
+                <td class="date">${v.published}</td>
+            </tr>
+        `).join('');
+    }
+
+    function filterVideos() {
+        const channel = document.getElementById('channelFilter').value;
+        const search = document.getElementById('searchInput').value.toLowerCase();
+
+        const filtered = allVideos.filter(v => {
+            const matchChannel = !channel || v.channel === channel;
+            const matchSearch = !search ||
+                v.title.toLowerCase().includes(search) ||
+                v.topics.toLowerCase().includes(search) ||
+                v.summary.toLowerCase().includes(search);
+            return matchChannel && matchSearch;
+        });
+
+        renderTable(filtered);
+    }
+
+    document.getElementById('channelFilter').addEventListener('change', filterVideos);
+    document.getElementById('searchInput').addEventListener('input', filterVideos);
+
+    loadData();
+</script>
+
+</body>
+</html>
