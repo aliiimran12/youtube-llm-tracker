@@ -1,10 +1,11 @@
 from google import genai
 import config
 import time
-
-client = genai.Client(api_key=config.GEMINI_APIKEY)
+import json
 
 def summarize(video):
+    client = genai.Client(api_key=config.GEMINI_APIKEY)
+    
     if not video.get("transcript"):
         return {
             "topics": "No transcript available",
@@ -27,8 +28,7 @@ Return only the JSON, nothing else."""
 
     response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
     time.sleep(15)
- 
-    import json
+    
     try:
         text = response.text.strip().strip("```json").strip("```").strip()
         return json.loads(text)
