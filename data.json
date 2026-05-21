@@ -5,9 +5,9 @@
     "published": "2025-02-27",
     "channel": "Andrej Karpathy",
     "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
-    "topics": "LLM practical use, ChatGPT ecosystem, LLM interaction mechanics, tokenization, context window, LLM training, LLM benchmarks",
-    "summary": "Andrej Karpathy offers a practical guide to using large language models, starting with ChatGPT, discussing the broader LLM ecosystem, explaining underlying interaction mechanisms like tokens and the context window, and briefly outlining the pre-training process and knowledge cutoff.",
-    "llm_themes": "inference, training, benchmarks, ecosystem"
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
   },
   {
     "video_id": "7xTGNNLPyMI",
@@ -15,9 +15,9 @@
     "published": "2025-02-05",
     "channel": "Andrej Karpathy",
     "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
-    "topics": "LLM architecture, pre-training data, data collection, data processing, text representation",
-    "summary": "Andrej Karpathy provides a general audience introduction to large language models, detailing the comprehensive pipeline of building them, from the pre-training stage, including internet data collection and extensive filtering (like URL, text, language, and PII removal), to the foundational process of representing text for neural network input.",
-    "llm_themes": "training, data collection, data preprocessing, text representation"
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
   },
   {
     "video_id": "l8pRSuU81PU",
@@ -25,9 +25,9 @@
     "published": "2024-06-09",
     "channel": "Andrej Karpathy",
     "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
-    "topics": "GPT-2 reproduction, Transformer architecture, token embeddings, positional embeddings, scaling laws, Hugging Face",
-    "summary": "Andrej Karpathy details his process of reproducing the 124 million parameter GPT-2 model, covering its architectural specifics, training considerations like scaling laws and compute costs, and demonstrating the inspection of its learned embeddings using PyTorch and Hugging Face Transformers.",
-    "llm_themes": "training, architecture, model analysis, reproducibility"
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
   },
   {
     "video_id": "zduSFxRajkE",
