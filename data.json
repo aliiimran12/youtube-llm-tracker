@@ -110,16 +110,6 @@
     "llm_themes": "Unknown"
   },
   {
-    "video_id": "Dr6jw-WAd9E",
-    "title": "Traditional X-Mas Stream",
-    "published": "2025-12-29",
-    "channel": "Yannic Kilcher",
-    "url": "https://www.youtube.com/watch?v=Dr6jw-WAd9E",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
     "video_id": "taCVT5vDAk0",
     "title": "TiDAR: Think in Diffusion, Talk in Autoregression (Paper Analysis)",
     "published": "2025-12-27",
@@ -145,6 +135,16 @@
     "published": "2025-11-01",
     "channel": "Yannic Kilcher",
     "url": "https://www.youtube.com/watch?v=Nao16-6l6dQ",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "0bpYCxv2qhw",
+    "title": "[Video Response] What Cloudflare&#39;s code mode misses about MCP and tool calling",
+    "published": "2025-10-19",
+    "channel": "Yannic Kilcher",
+    "url": "https://www.youtube.com/watch?v=0bpYCxv2qhw",
     "topics": "No transcript available",
     "summary": "No transcript available",
     "llm_themes": "Unknown"
