@@ -25,8 +25,8 @@ Return a JSON object with exactly these fields:
 
 Return only the JSON, nothing else."""
 
-    response = client.models.generate_content(model="gemini-2.0-flash-lite", contents=prompt)
-    time.sleep(2)
+    response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+    time.sleep(15)
  
     import json
     try:

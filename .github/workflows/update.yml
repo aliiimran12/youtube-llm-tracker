@@ -1,0 +1,33 @@
+name: Update Tracker
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-api-python-client youtube-transcript-api google-genai
+
+      - name: Run tracker
+        env:
+          YT_APIKEY: ${{ secrets.YT_APIKEY }}
+          GEMINI_APIKEY: ${{ secrets.GEMINI_APIKEY }}
+        run: python main.py
+
+      - name: Commit updated data
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add data.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update data.json"
+          git push

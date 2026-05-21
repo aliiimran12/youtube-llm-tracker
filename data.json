@@ -1,50 +1,50 @@
 [
   {
-    "video_id": "YOW8m2YGtRg",
-    "title": "Pong AI with Policy Gradients",
-    "published": "2016-05-29",
+    "video_id": "EWvNQjAaOHw",
+    "title": "How I use LLMs",
+    "published": "2025-02-27",
     "channel": "Andrej Karpathy",
-    "url": "https://www.youtube.com/watch?v=YOW8m2YGtRg",
+    "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
+    "topics": "LLM practical use, ChatGPT ecosystem, LLM interaction mechanics, tokenization, context window, LLM training, LLM benchmarks",
+    "summary": "Andrej Karpathy offers a practical guide to using large language models, starting with ChatGPT, discussing the broader LLM ecosystem, explaining underlying interaction mechanisms like tokens and the context window, and briefly outlining the pre-training process and knowledge cutoff.",
+    "llm_themes": "inference, training, benchmarks, ecosystem"
+  },
+  {
+    "video_id": "7xTGNNLPyMI",
+    "title": "Deep Dive into LLMs like ChatGPT",
+    "published": "2025-02-05",
+    "channel": "Andrej Karpathy",
+    "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+    "topics": "LLM architecture, pre-training data, data collection, data processing, text representation",
+    "summary": "Andrej Karpathy provides a general audience introduction to large language models, detailing the comprehensive pipeline of building them, from the pre-training stage, including internet data collection and extensive filtering (like URL, text, language, and PII removal), to the foundational process of representing text for neural network input.",
+    "llm_themes": "training, data collection, data preprocessing, text representation"
+  },
+  {
+    "video_id": "l8pRSuU81PU",
+    "title": "Let&#39;s reproduce GPT-2 (124M)",
+    "published": "2024-06-09",
+    "channel": "Andrej Karpathy",
+    "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
+    "topics": "GPT-2 reproduction, Transformer architecture, token embeddings, positional embeddings, scaling laws, Hugging Face",
+    "summary": "Andrej Karpathy details his process of reproducing the 124 million parameter GPT-2 model, covering its architectural specifics, training considerations like scaling laws and compute costs, and demonstrating the inspection of its learned embeddings using PyTorch and Hugging Face Transformers.",
+    "llm_themes": "training, architecture, model analysis, reproducibility"
+  },
+  {
+    "video_id": "zduSFxRajkE",
+    "title": "Let&#39;s build the GPT Tokenizer",
+    "published": "2024-02-20",
+    "channel": "Andrej Karpathy",
+    "url": "https://www.youtube.com/watch?v=zduSFxRajkE",
     "topics": "No transcript available",
     "summary": "No transcript available",
     "llm_themes": "Unknown"
   },
   {
-    "video_id": "S2GY3gh6qC8",
-    "title": "Introducing arxiv-sanity",
-    "published": "2016-03-24",
+    "video_id": "zjkBMFhNj_g",
+    "title": "[1hr Talk] Intro to Large Language Models",
+    "published": "2023-11-23",
     "channel": "Andrej Karpathy",
-    "url": "https://www.youtube.com/watch?v=S2GY3gh6qC8",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "T7YkPWpwFD4",
-    "title": "CS231n Winter 2016: Lecture 15: Invited Talk by Jeff Dean",
-    "published": "2016-03-10",
-    "channel": "Andrej Karpathy",
-    "url": "https://www.youtube.com/watch?v=T7YkPWpwFD4",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "ekyBklxwQMU",
-    "title": "CS231n Winter 2016: Lecture 14: Videos and Unsupervised Learning",
-    "published": "2016-03-01",
-    "channel": "Andrej Karpathy",
-    "url": "https://www.youtube.com/watch?v=ekyBklxwQMU",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
-  },
-  {
-    "video_id": "ByjaPdWXKJ4",
-    "title": "CS231n Winter 2016: Lecture 13: Segmentation, soft attention, spatial transformers",
-    "published": "2016-02-26",
-    "channel": "Andrej Karpathy",
-    "url": "https://www.youtube.com/watch?v=ByjaPdWXKJ4",
+    "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
     "topics": "No transcript available",
     "summary": "No transcript available",
     "llm_themes": "Unknown"
@@ -195,6 +195,56 @@
     "published": "2026-03-27",
     "channel": "Two Minute Papers",
     "url": "https://www.youtube.com/watch?v=Io_GqmbNBbY",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "o_av1b9rs2g",
+    "title": "Two Rival Bets on AGI: Google I/O Highlights",
+    "published": "2026-05-20",
+    "channel": "AI Explained",
+    "url": "https://www.youtube.com/watch?v=o_av1b9rs2g",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "jz0rNhfAKo8",
+    "title": "GPT 5.5 Arrives, DeepSeek V4 Drops, and the Compute War Intensifies",
+    "published": "2026-04-24",
+    "channel": "AI Explained",
+    "url": "https://www.youtube.com/watch?v=jz0rNhfAKo8",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "QVJcdfkRpH8",
+    "title": "Claude Opus 4.7 - A New Frontier, in Performance \u2026 and Drama",
+    "published": "2026-04-17",
+    "channel": "AI Explained",
+    "url": "https://www.youtube.com/watch?v=QVJcdfkRpH8",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "txx6ec6MLNY",
+    "title": "Claude Mythos: Highlights from 244-page Release",
+    "published": "2026-04-08",
+    "channel": "AI Explained",
+    "url": "https://www.youtube.com/watch?v=txx6ec6MLNY",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "s4tptozUJ8Y",
+    "title": "Two AI Models Set to \u201cstir government urgency\u201d, But Will This Challenge Undo Them?",
+    "published": "2026-03-26",
+    "channel": "AI Explained",
+    "url": "https://www.youtube.com/watch?v=s4tptozUJ8Y",
     "topics": "No transcript available",
     "summary": "No transcript available",
     "llm_themes": "Unknown"

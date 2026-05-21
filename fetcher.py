@@ -1,6 +1,7 @@
 from googleapiclient.discovery import build
 from youtube_transcript_api import YouTubeTranscriptApi
 import config
+import time 
 
 youtube = build("youtube", "v3", developerKey=config.YT_APIKEY)
 
@@ -30,6 +31,7 @@ def get_recent_videos(channel_id, channel_name):
 
 def get_transcript(video_id):
     try:
+        time.sleep(3)
         ytt = YouTubeTranscriptApi()
         transcript = ytt.fetch(video_id)
         text = " ".join([entry.text for entry in transcript])
