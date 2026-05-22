@@ -5,9 +5,9 @@
     "published": "2025-02-27",
     "channel": "Andrej Karpathy",
     "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
+    "topics": "LLM applications, LLM ecosystem, tokenization, LLM training, conversation context, knowledge cutoff",
+    "summary": "Andrej Karpathy introduces the practical applications of large language models, demonstrating how he uses tools like ChatGPT, explaining the underlying token-based interaction, the concept of a context window, and briefly touching upon the pre-training process and its implications like the knowledge cutoff.",
+    "llm_themes": "training, inference, tokenization, context window, LLM ecosystem, applications"
   },
   {
     "video_id": "7xTGNNLPyMI",
@@ -15,9 +15,9 @@
     "published": "2025-02-05",
     "channel": "Andrej Karpathy",
     "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
+    "topics": "LLM introduction, LLM training data, data collection, data processing, text representation",
+    "summary": "Andrej Karpathy provides a comprehensive, general-audience introduction to large language models like ChatGPT, focusing on the multi-stage pre-training process, including collecting and processing massive internet text datasets like FineWeb and Common Crawl, and preparing text for neural network input.",
+    "llm_themes": "training"
   },
   {
     "video_id": "l8pRSuU81PU",
@@ -25,9 +25,9 @@
     "published": "2024-06-09",
     "channel": "Andrej Karpathy",
     "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
+    "topics": "GPT-2 reproduction, Transformer architecture, scaling laws, tokenization, embeddings, PyTorch, Hugging Face, model analysis",
+    "summary": "Andrej Karpathy details the process of reproducing the 124 million parameter GPT-2 model, discussing its architecture, the resources needed for training, and how to load and analyze its pre-trained weights, particularly focusing on token and positional embeddings, using Hugging Face Transformers in PyTorch.",
+    "llm_themes": "training, model architecture, reproducibility, cost/compute, pre-trained models, scaling laws, embeddings"
   },
   {
     "video_id": "nepKKz-MzFM",
@@ -35,9 +35,9 @@
     "published": "2026-05-06",
     "channel": "Lex Fridman",
     "url": "https://www.youtube.com/watch?v=nepKKz-MzFM",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
+    "topics": "FFmpeg, VLC, open source software, video codecs, low-level engineering, software community, digital archiving",
+    "summary": "This discussion celebrates FFmpeg and VLC as legendary, open-source software systems vital for internet video and audio, delving into their technical complexity, community-driven development, iconic branding, and capacity to handle diverse media formats.",
+    "llm_themes": "none"
   },
   {
     "video_id": "iKx3gAODybU",
@@ -45,9 +45,9 @@
     "published": "2026-04-09",
     "channel": "Lex Fridman",
     "url": "https://www.youtube.com/watch?v=iKx3gAODybU",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
+    "topics": "Vikings, Viking Age, medieval history, Norse culture, longships, Lindisfarne raid",
+    "summary": "The video features an interview with historian Lars Brownworth, discussing the Vikings' profound impact on medieval Europe, focusing on their advanced longships, the terror they inspired through raids like Lindisfarne, and aspects of their harsh culture, mythology (Valhalla, Ragnarok), and motivations.",
+    "llm_themes": "training data, inference, historical data analysis, natural language understanding"
   },
   {
     "video_id": "H9rF1CSSh-w",
@@ -55,9 +55,9 @@
     "published": "2026-03-11",
     "channel": "Lex Fridman",
     "url": "https://www.youtube.com/watch?v=H9rF1CSSh-w",
-    "topics": "No transcript available",
-    "summary": "No transcript available",
-    "llm_themes": "Unknown"
+    "topics": "Gaming history, game design, specific video games, Jeff Kaplan's career, Blizzard, EverQuest, Overwatch, World of Warcraft, The Legend of California",
+    "summary": "Jeff Kaplan discusses his lifelong love for video games, from early arcade classics and text adventures to his professional journey designing iconic titles like World of Warcraft and Overwatch, and his new game \"The Legend of California.\"",
+    "llm_themes": "The transcript does not directly discuss AI or LLMs. However, the deep dive into text-based games like Zork, which rely entirely on language for world-building and player interaction, can be conceptually linked to LLM capabilities in natural language understanding, text generation, and the potential for LLM-powered agents in simulated text environments."
   },
   {
     "video_id": "xHi8PUIVyoo",
@@ -85,6 +85,66 @@
     "published": "2025-12-27",
     "channel": "Yannic Kilcher",
     "url": "https://www.youtube.com/watch?v=taCVT5vDAk0",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "LpXhy2iiaQE",
+    "title": "DeepSeek\u2019s New AI Is A Game Changer",
+    "published": "2026-05-22",
+    "channel": "Two Minute Papers",
+    "url": "https://www.youtube.com/watch?v=LpXhy2iiaQE",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "4nQnhjimB4Y",
+    "title": "OpenAI&#39;s ChatGPT 5.5 Instant: The Good, The Bad And The Insane",
+    "published": "2026-05-08",
+    "channel": "Two Minute Papers",
+    "url": "https://www.youtube.com/watch?v=4nQnhjimB4Y",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "QzZ4VwDHAT4",
+    "title": "Sakana AI\u2019s God Simulator Is Brilliant",
+    "published": "2026-05-01",
+    "channel": "Two Minute Papers",
+    "url": "https://www.youtube.com/watch?v=QzZ4VwDHAT4",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "o_av1b9rs2g",
+    "title": "Two Rival Bets on AGI: Google I/O Highlights",
+    "published": "2026-05-20",
+    "channel": "AI Explained",
+    "url": "https://www.youtube.com/watch?v=o_av1b9rs2g",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "jz0rNhfAKo8",
+    "title": "GPT 5.5 Arrives, DeepSeek V4 Drops, and the Compute War Intensifies",
+    "published": "2026-04-24",
+    "channel": "AI Explained",
+    "url": "https://www.youtube.com/watch?v=jz0rNhfAKo8",
+    "topics": "No transcript available",
+    "summary": "No transcript available",
+    "llm_themes": "Unknown"
+  },
+  {
+    "video_id": "QVJcdfkRpH8",
+    "title": "Claude Opus 4.7 - A New Frontier, in Performance \u2026 and Drama",
+    "published": "2026-04-17",
+    "channel": "AI Explained",
+    "url": "https://www.youtube.com/watch?v=QVJcdfkRpH8",
     "topics": "No transcript available",
     "summary": "No transcript available",
     "llm_themes": "Unknown"
